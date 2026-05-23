@@ -1,0 +1,35 @@
+{
+  "name": "pebblepad-requirement-extractor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "pebblepad-req": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:scrape": "node scripts/build-scrape-index.mjs && node scripts/build-dom-scrape-index.mjs",
+    "dev": "node --import tsx src/cli.ts",
+    "scrape:html": "node --import tsx src/cli.ts capture-dom --preserve-hash --shared-host-suffix pebblepad.co.uk --log-queue --settle-ms 3000 --content-wait-ms 60000",
+    "dev:web": "npm run dev --prefix web",
+    "build:web": "npm run build --prefix web",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "jszip": "^3.10.1",
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@types/jszip": "^3.4.0",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

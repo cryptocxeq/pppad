@@ -1,0 +1,27 @@
+Unit 9 Step 5
+Safeguarding 2.
+Learning Outcomes
+Evidence a critical understanding of the ways in which the policy, cultural and social contexts of education and of learners’ lives can influence their learning, behaviours and wellbeing
+Activity
+1. Explore the provision in your setting and identify how pupils are safeguarded. Make notes on the Padlet below.
+2. Comment respectfully on each others’ posts and engage in discussion to further your own practice. Be aware that the attitude to safeguarding will differ in different cultural settings.
+3. Discuss and share any good practice you come across in your reading of policy or other literature.
+You may want to look at school policies – this could include SEND policy, child protection, inclusion, behaviour, e-safety, anti-bullying etc. If you are not in a school setting, use a local school to study (policies might be made available on websites) and compare to your practices. If you are unable to do this, please use the anonymised policies provided at the link below.
+Safeguarding policy.
+Discuss and share any good practice you come across in your reading of policy or other literature.
+Notes on Padlet.
+Notes on Padlet. multi-line text editor.
+Online resources
+UWE Library: https://www1.uwe.ac.uk/library/
+Study support: https://www1.uwe.ac.uk/students/studysupport/studyskills.aspx
+Harvard Referencing: https://www1.uwe.ac.uk/students/studysupport/studyskills/referencing.aspx
+PROGRESS TRACKING
+ Mark page as complete
+View progress
+
+Linked DOCX (https://www.traffordsafeguardingpartnership.org.uk/Docs/Safeguarding-children-young-people/Safeguarding-in-Education/Schools-Model-Safeguarding-Policy.docx): apiRequestContext.get: Timeout 60000ms exceeded.
+Call log:
+[2m  - → GET https://www.traffordsafeguardingpartnership.org.uk/Docs/Safeguarding-children-young-people/Safeguarding-in-Education/Schools-Model-Safeguarding-Policy.docx[22m
+[2m    - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36[22m
+[2m    - accept: */*[22m
+[2m    - accept-encoding: gzip,deflate,br[22m

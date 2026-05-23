@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.playwright-profile/
+pebblepad-out-*.zip
+pebblepad-requirement-extractor@*
+# Large walk outputs — keep scrape-index in web/public for Pages builds
+out/pebblepad-walk-*.json
+out/pebblepad-walk-*.md
+out/pebblepad-dom-*/
+out/pebblepad-dom-*.html
+out/pebblepad-dom-*.summary.json
+out/pebblepad-dom-*.manifest.json
+.DS_Store
+web/dist/
+web/node_modules/
