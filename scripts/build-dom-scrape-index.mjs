@@ -145,11 +145,25 @@ function copyTextAssets(sessionDir, sessionFolderName, captures) {
 
 const sessionDir = latestDomSessionDir();
 const walkPath = latestWalkJson();
+const unifiedPath = join(webPublic, "unified-scrape.json");
 
 if (!sessionDir) {
+  if (existsSync(unifiedPath)) {
+    try {
+      const existing = JSON.parse(readFileSync(unifiedPath, "utf8"));
+      if (existing.dom?.staticAssetsBase && Object.keys(existing.pagesByName ?? {}).length > 0) {
+        console.warn(
+          "No pebblepad-dom-* in out/ — keeping existing web/public/unified-scrape.json (CI-safe).",
+        );
+        process.exit(0);
+      }
+    } catch {
+      /* fall through to empty write */
+    }
+  }
   console.warn("No pebblepad-dom-* session in out/ — writing empty unified index.");
   writeFileSync(
-    join(webPublic, "unified-scrape.json"),
+    unifiedPath,
     JSON.stringify({ dom: null, walk: null, pagesByName: {}, captures: [] }, null, 2),
   );
   process.exit(0);
